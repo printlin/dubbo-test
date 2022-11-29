@@ -1,0 +1,26 @@
+
+server:
+  port: 8888
+
+dubbo:
+  application:
+    name: dubbo-test-consumer
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://192.168.0.129:8848
+    username: nacos
+    password: nacos
+  config-center:
+    address: nacos://192.168.0.129:8848
+    group: dubbo
+    username: nacos
+    password: nacos
+  metadata-report:
+    address: nacos://192.168.0.129:8848
+    group: dubbo
+    username: nacos
+    password: nacos
+  consumer:
+    filter: logFilter

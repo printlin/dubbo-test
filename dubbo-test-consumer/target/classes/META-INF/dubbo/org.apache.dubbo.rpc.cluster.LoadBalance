@@ -1,0 +1,1 @@
+groupLoadBalance=com.trantour.test.consumer.spi.GroupLoadBalance
